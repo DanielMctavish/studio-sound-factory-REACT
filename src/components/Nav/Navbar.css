@@ -1,0 +1,93 @@
+#nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: fixed;
+    top: 1vh;
+    width: 97%;
+    height: 8vh;
+
+    border-radius: 10px;
+    letter-spacing: 4px;
+
+    color: rgba(217, 217, 217, 0.834);
+    transition: .4s;
+    z-index: 1;
+}
+
+#logo-nav-bar{
+    position: absolute;
+    width: 15vh;
+    left: 6vh;
+    top: -2.5vh;
+}
+#nav-bar:hover{
+    color: white;
+    height: 9vh;
+    transition: .4s;
+}
+
+#icons-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+}
+
+#icons-bar img{
+    cursor: pointer;
+    width: 4vh;
+}
+
+
+#Menu-icon{
+    position: absolute;
+    cursor: pointer;
+    right: 5vh;
+    transition: .5s;
+    z-index: 1;
+}
+
+
+#Menu-icon.activate .line1{
+    transform: translateY(5px);
+    transition: .3s;
+    width: 25px;
+}
+#Menu-icon.activate .line2{
+    opacity: 0;
+    transition: .2s;
+}
+#Menu-icon.activate .line3{
+    transform: translateY(-5px);
+    transition: .3s;
+    width: 25px;
+}
+
+
+#Menu-icon div {
+    width: 25px;
+    height: 2px;
+    background: white;
+    margin: 5px;
+    transition: .3s;
+}
+
+@media screen and (max-width: 500px) {
+ #logo-name{
+    font-size: 5pt;
+ }
+ #icons-bar{
+    margin-right: 14vh;
+    transform: scale(.8);
+ }
+ #Menu-icon{
+    right: 3vh;
+ }
+ #menu-list{
+    width: 95%;
+    left: auto;
+    right: auto;
+ }
+}

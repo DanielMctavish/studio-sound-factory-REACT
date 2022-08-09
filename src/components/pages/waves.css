@@ -1,0 +1,56 @@
+#wave-01 {
+    position: absolute;
+    width: 120%;
+    height: 35vh;
+    bottom: -2vh;
+    left: -6vh;
+}
+
+#wave-02 {
+    position: absolute;
+    width: 120%;
+    height: 35vh;
+    left: -6vh;
+    bottom: -12vh;
+}
+
+#wave01-text {
+    position: absolute;
+    width: 100%;
+    color: blueviolet;
+    margin-top: 8.1vh;
+    letter-spacing: 7px;
+    text-align: center;
+}
+
+#wave02-text {
+    position: absolute;
+    width: 100%;
+    color: rgb(239, 239, 239);
+    margin-top: 17.8vh;
+    letter-spacing: 7px;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    #wave01-text {
+        font-size: 12pt;
+        width: 100%;
+        left: auto;
+        right: auto;
+        margin-left: 0;
+        margin-top: 5vh;
+    }
+
+    #wave02-text {
+        width: 100%;
+        left: auto;
+        right: auto;
+        margin-left: 0;
+        margin-top: 18vh;
+        content: "Experiência Única";
+        font-size: 10pt;
+    }
+}

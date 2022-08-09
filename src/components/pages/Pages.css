@@ -1,0 +1,522 @@
+.pages-geral {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 85vh;
+  opacity: 0;
+  top: 12vh;
+  transition: .5s;
+  border-radius: 10px;
+}
+
+#page01 {
+  background-color: rgb(42, 42, 42);
+  opacity: 1;
+}
+
+#page02 {
+  display: none;
+  background-color: rgb(112, 112, 112);
+  color: rgb(67, 67, 67);
+}
+
+#Mini-Daw {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgba(100, 41, 182, 0.456), rgba(70, 70, 70, 0.313));
+  width: 85%;
+  height: 30vh;
+  margin-bottom: -20vh;
+  z-index: 1;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+#card_music {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 40vh;
+  height: 40vh;
+  background: linear-gradient(to right, rgba(100, 41, 182, 0.456), rgba(23, 102, 92, 0.313));
+  border-radius: 10px;
+  z-index: 1;
+}
+
+#title-music {
+  letter-spacing: 4px;
+  font-size: 10pt;
+}
+
+#cover_img {
+  width: 27vh;
+  border-radius: 10px;
+}
+
+#audio-controlers {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+#track {
+  position: relative;
+  width: 40vh;
+  height: 46%;
+  background-color: rgb(206, 206, 206);
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.input-track-title {
+  margin: 2vh;
+  width: 50%;
+  height: 4vh;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 14pt;
+  background: rgb(48, 48, 48);
+  color: rgb(4, 209, 18);
+}
+
+#areaRec {
+  overflow: hidden;
+  position: absolute;
+  width: 85%;
+  height: 25vh;
+  background-color: rgb(227, 227, 227);
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px rgba(61, 61, 61, 0.633);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#marks {
+  background-color: rgb(188, 188, 188);
+  border-right: 1px solid rgb(41, 41, 41);
+}
+
+#describe-content-page02 {
+  width: 50%;
+  font-size: 21pt;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-top: 5vh;
+  color: white;
+}
+
+#title-page02 {
+  color: rgb(201, 201, 201);
+  letter-spacing: 1vh;
+}
+
+#page03 {
+  display: none;
+  background: linear-gradient(to right, rgb(113, 2, 138), rgba(58, 4, 164, 0.658));
+  font-weight: lighter;
+}
+
+#descri_estrutura {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(70, 70, 70);
+  width: 30vh;
+  height: 3vh;
+  margin: 2vh;
+  letter-spacing: 2px;
+}
+
+.slide-container {
+  width: 50%;
+  height: 50vh;
+}
+
+#display-imgs {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 60vh;
+}
+
+#display-imgs img {
+  height: 50vh;
+  border-radius: 10px;
+}
+
+
+#page04 {
+  display: none;
+  background-color: rgb(216, 216, 216);
+  color: rgb(98, 98, 98);
+}
+
+#list-styles {
+  list-style: none;
+  text-align: center;
+}
+
+#list-styles li {
+  border: 1px solid black;
+  margin: 2px;
+  font-size: 12pt;
+  width: 25vh;
+  letter-spacing: 4px;
+}
+
+#list-styles li:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.363);
+}
+
+#background-page04 {
+  position: absolute;
+  left: 2vh;
+  transform: scale(1.1);
+  opacity: .3;
+  transition: .4s;
+  z-index: -1;
+}
+
+#page05 {
+  display: none;
+  background: linear-gradient(to right, rgb(151, 44, 209), purple);
+}
+
+#page06 {
+  display: none;
+  background: linear-gradient(to right, rgb(173, 123, 200), rgb(79, 0, 128));
+}
+
+#fluxograma-técnico {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 80%;
+  font-size: 10pt;
+}
+
+#fluxograma-técnico li {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.854);
+  color: rgb(43, 43, 43);
+  margin-top: 1vh;
+  border-radius: 5px;
+  padding: 1px;
+  width: 70%;
+  transition: .2s;
+}
+#fluxograma-técnico li:active {
+  width: 72%;
+  background-color: rgb(218, 144, 243);
+}
+
+#text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+  background-color: rgba(232, 225, 239, 0.394);
+  color: rgb(237, 225, 245);
+  text-align: center;
+  width: 60%;
+  height: 5vh;
+  border-radius: 10px;
+}
+
+#display-artists {
+  width: 70%;
+}
+
+#swiper {
+  height: 35vh;
+}
+
+#swiper-element {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(200, 200, 200);
+  height: 30vh;
+  width: 30vh;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(45, 45, 45, 0.661);
+}
+
+#swiper-element img {
+  width: 30vh;
+}
+
+
+#page07 {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(36, 42, 45);
+}
+
+#form-contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 25vh;
+}
+
+#form-contact input {
+  text-align: center;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  height: 3vh;
+  width: 20vh;
+  outline: none;
+}
+
+#form-contact input:hover {
+  color: rgb(162, 79, 239);
+  border: 3px solid rgb(77, 2, 147);
+}
+
+#form-contact button {
+  text-align: center;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  height: 3vh;
+  width: 16vh;
+  outline: none;
+  cursor: pointer;
+}
+
+#form-contact button:active {
+  background-color: rgba(201, 201, 201, 0.24);
+}
+
+#bg-page01 {
+  position: absolute;
+  width: 120%;
+  opacity: .2;
+}
+
+#video-cantora {
+  position: absolute;
+  width: 120%;
+  opacity: .2;
+  filter: blur(12px);
+}
+
+#shapes-studio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid rgb(43, 43, 43);
+  border-radius: 10px;
+  width: 30vh;
+  height: 10vh;
+  z-index: 1;
+}
+
+#rec {
+  cursor: pointer;
+  width: 6vh;
+  height: 6vh;
+  background: red;
+  border-radius: 50%
+}
+
+#play {
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-top: 3vh solid transparent;
+  border-left: 5vh solid rgb(0, 148, 27);
+  border-bottom: 3vh solid transparent;
+  border-radius: 5px;
+}
+
+#pause {
+  cursor: pointer;
+  width: 6vh;
+  height: 6vh;
+  background: rgb(49, 49, 49);
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width: 500px) {
+  #page01 h1 {
+    font-size: 15pt;
+    width: 90%;
+    text-align: center;
+  }
+
+  #bg-page01 {
+    width: 140vh;
+    opacity: .1;
+  }
+
+  #page01 {
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  #page01 h3 {
+    width: 80%;
+  }
+
+  #page02 {
+    text-align: center;
+  }
+
+  #page02 video {
+    width: 150vh;
+  }
+
+  #describe-content-page02 {
+    width: 80%;
+    font-size: 14pt;
+  }
+
+  #title-page02 {
+    font-size: 17pt;
+  }
+
+  #Mini-Daw {
+    background: none;
+    width: 100%;
+  }
+
+  #track {
+    display: none;
+  }
+
+  #areaRec {
+    width: 100%;
+    left: auto;
+    right: auto;
+  }
+
+  #page03 {
+    text-align: center;
+  }
+
+  .slide-container {
+    width: 100%;
+  }
+
+  #descri_estrutura {
+    width: 95%;
+  }
+
+  #display-imgs {
+    width: 100%;
+  }
+
+  #display-imgs img {
+    width: 90%;
+  }
+
+  #page04 {
+    text-align: center;
+  }
+
+  #page05 {
+    text-align: center;
+  }
+
+  #fluxograma-técnico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 97%;
+    font-size: 10pt;
+  }
+
+  #fluxograma-técnico li {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.881);
+    color: rgb(43, 43, 43);
+    margin-top: 1vh;
+    border-radius: 5px;
+    padding: 3px;
+    width: 90%;
+  }
+  #fluxograma-técnico li:active {
+    width: 95%;
+  }
+
+  #list-styles {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vh;
+  }
+
+  #list-styles li {
+    margin-top: 2vh;
+    list-style: none;
+  }
+
+  #text-content {
+    margin-top: 2vh;
+  }
+
+  #background-page04 {
+    width: 130vh;
+    transform: translateX(-120vh) translateY(-4vh);
+  }
+
+  #page06 {
+    text-align: center;
+  }
+
+  #page06 h1 {
+    width: 100%;
+    font: 14pt;
+  }
+
+  #text-content {
+    width: 80%;
+    height: auto;
+  }
+
+  #display-artists {
+    width: 95%;
+  }
+
+  iframe {
+    width: 90%;
+  }
+}
